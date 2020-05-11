@@ -8,10 +8,12 @@ class ApplicationController < ActionController::Base
 	# You can move before_action :authenticate_user! to specific controllers. 
 	# And you can use skip_before_action for selected actions.
 
-
 	# def after_sign_in_path_for(checkout_session)
 	#	new_checkout_session_path
 	# end
+
+	# CanCanCan
+	# load_and_authorize_resource, except: [:home, :index]
 
 
 end
