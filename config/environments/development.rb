@@ -12,6 +12,9 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  # Devise - You can insert your machine’s IP instead of localhost. You can also change the port.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
